@@ -1,0 +1,63 @@
+<style>
+    *{
+        background-color: #242424;
+    }
+
+    body{
+        background-color: #242424;
+    }
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    hr {
+        background-color: #ddd;
+    }
+
+    .container-generic {
+        min-height: 100vh;
+        background-color: #242424;
+    }
+
+
+.material-symbols-outlined {
+ color: white;
+}
+
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+<div class="container-generic text-center">
+    <span class="material-symbols-outlined"> view_in_ar_new </span>
+    <h1>Vista de Productos</h1>
+    <br>
+
+    {{#if hayProductos}}
+    <div class="table-responsive">
+        <table class="table table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Foto</th>
+            </tr>
+            {{#each productos}}
+            <tr>
+                <td>{{this.title}}</td>
+                <td>${{this.price}}</td>
+                <td><img width="50" src={{this.thumbnail}} alt="not found"></td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+    {{else}}
+    <h3 class="alert alert-warning text-center">No se encontraron productos</h3>
+    {{/if}}
+    <br>
+    <a href="/" type="button" class="btn btn-primary">Cargar un producto</a>
+    

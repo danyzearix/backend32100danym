@@ -1,0 +1,31 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #242424;
+}
+
+body{
+    background-color: #242424;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h4{
+    color: aliceblue;
+    margin-bottom: 25px;
+}
+
+label{
+    color: antiquewhite;
+}
+
+.form-control{
+    width: 100%;
+}
+
+.material-symbols-outlined {
+    color: aliceblue;
+}
