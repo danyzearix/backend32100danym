@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div style="padding-left: 10rem; padding-right: 10rem;">
+        <h3>Ingresa el nuevo producto</h3>
+    </div>
+        <div style="padding-left: 10rem; padding-right: 10rem;">
+            <form action="/api/productos" method="POST" name="formProd">
+
+                Title: <input class="input-field col s6" type="text" name="title">
+                Price: <input type="number" name="price">
+                URL Thumbnail: <input type="url" name="thumbnail">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                  </button>
+            </form>
+        </div>
+        <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

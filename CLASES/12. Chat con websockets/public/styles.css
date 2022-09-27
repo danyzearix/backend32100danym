@@ -1,0 +1,152 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #6610f2 10%, #212529);
+  border-radius: 10px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+  background-color: rgb(33, 37, 41);
+}
+
+.custom-nav-background {
+  background: linear-gradient(to right, #212529 5%, #6610f2 80%, #212529);
+}
+
+.nav-img {
+  width: 100%;
+  min-height: 100%;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.login-button {
+  background-color: #6610f2;
+  color: white;
+  width: 50%;
+  justify-self: center;
+}
+
+.users-area {
+  height: 610px;
+  min-height: 610px;
+  background: linear-gradient(to right, #212529, #6610f2);
+}
+
+.users-icon {
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  background-color: rgb(26, 214, 26);
+}
+
+.chat-header {
+  background: linear-gradient(to right, #6610f2, #212529);
+  height: 60px;
+}
+
+.button-leave {
+  width: 150px;
+}
+
+.chat-body {
+  height: 440px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.bot-messages {
+  color: #BBBBBB;
+  margin-bottom: 5px;
+}
+
+.other-messages-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.other-messages-container .other-messages {
+  width: auto;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 8px;
+  background-color: #9ec5fe;
+}
+
+.other-messages-container .other-messages span:first-child {
+  font-size: 10px;
+}
+
+.my-messages-container .my-messages span:first-child {
+  font-size: 10px;
+}
+
+.my-messages-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.my-messages-container .my-messages {
+  width: auto;
+  border-radius: 8px 0 0 8px;
+  padding: 5px 8px;
+  background-color: #CCCCCC;
+}
+
+.my-messages-container .my-messages span:first-child {
+  font-size: 10px;
+}
+
+.chat-input {
+  box-shadow: 0 -1px 5px #CCCCCC;
+  padding: 10px 0;
+  max-width: 100%;
+}
+
+.chat-form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1em;
+  padding-right: 10px;
+}
+
+.chat-form textarea {
+  flex-grow: 1;
+  resize: none;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.chat-form input[type="submit"] {
+  background: linear-gradient(to right, #6610f2, #212529);
+  transition: all 0.5s;
+}
+
+.chat-form input[type="submit"]:hover {
+  background-position: 60px;
+  transition: all 0.5s;
+}
