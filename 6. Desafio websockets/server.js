@@ -29,13 +29,19 @@ app.engine('hbs', engine({
   let messages = [];
 
   console.log(productos);
-
+//Escribir el archivo de productos
   function writeFS(params) {
     if (params === [""]) {
       fs.writeFileSync("productos.txt", params)
     }else { fs.writeFileSync("productos.txt", JSON.stringify(params))}
+  };
+//Escribir archivo de chat
+  function writeCHAT(params) {
+    if (params === [""]) {
+      fs.writeFileSync("chat.txt", params)
+    }else { fs.writeFileSync("chat.txt", JSON.stringify(params))}
   }
-
+//Leer archivo de productos
   function readTxt(params) {
     if (productos.length === 0) {
       console.log("No hay productos en el array")
@@ -44,6 +50,16 @@ app.engine('hbs', engine({
         let persisParse = JSON.parse(persistencia)
         console.log(persistencia)
         return persisParse;}
+};
+
+function readCHAT(params) {
+  if (messages.length === 0) {
+    console.log("Sin historial de chats")
+  } else {
+    let persistenciaChat = fs.readFileSync("./chat.txt","utf-8")
+      let persisChatParse = JSON.parse(persistenciaChat)
+      console.log(persistenciaChat)
+      return persisChatParse;}
 };
 
 
@@ -56,10 +72,11 @@ app.engine('hbs', engine({
       messages.push(message)
       console.log(messages)
       io.emit("renderChat", messages);
+      writeCHAT(messages)
       });
-    //io.emit("allmsg", messages, id);    ///Este evento deberia emitir los mensajes anteriores
+    io.emit("recoverChat", (readCHAT()));    ///Este evento deberia emitir los mensajes anteriores
     
-    //socket.emit("historial", readTxt()); //Esta funcion reconectar constantemente el socket 
+    socket.emit("historial", readTxt()); //Esta funcion reconectar constantemente el socket 
     
     socket.on("productosLive", (info) => {
       productos.push(info)
@@ -68,8 +85,6 @@ app.engine('hbs', engine({
       io.emit("productosLive", info);
       io.emit("render", productos);
   });
-
-  
 
  });
 

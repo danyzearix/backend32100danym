@@ -8,6 +8,7 @@ const router = Router()
 let productos = require("../data/productos")
 
 const msgError = {"error": "producto no encontrado"}
+const admin = false
 //Api routes
 //Home
 router.get("/home", (req, res ) => {
@@ -15,8 +16,8 @@ router.get("/home", (req, res ) => {
 })
 //Productos GET All
 router.get("/productos", (req, res ) => {
-    res.json(productos)
-})
+   res.json(productos)
+});
 
 //Productos GET by ID
 router.get("/productos/:id", (req , res) => {

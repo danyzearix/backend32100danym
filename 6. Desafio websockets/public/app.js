@@ -4,19 +4,19 @@ socket.on("historial", (data) =>{
   renderUI(data);
 })
 
-// socket.on("recoverChat", (data) =>{
-//   renderCHAT(data);
-// })
+socket.on("recoverChat", (data) =>{
+  renderCHAT(data);
+})
 //----Codigo que deberia recuperar los mensajes
-// socket.on ("allmsg", (messages) =>{
+socket.on ("allmsg", (messages) =>{
 
-//   messages.map((message) => {
-//     chatBox.innerHTML = ` 
-//     <ul>
-//       <li> ${message.time} ${message.user}: ${message.info} </li>
-//     </ul>
-//       `;
-// })});
+  messages.map((message) => {
+    chatBox.innerHTML = ` 
+    <ul>
+      <li> ${message.time} ${message.user}: ${message.info} </li>
+    </ul>
+      `;
+})});
 
   enviar.addEventListener('click', (e) => {
     (e).preventDefault();
