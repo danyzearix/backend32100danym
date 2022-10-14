@@ -1,0 +1,58 @@
+
+    *{
+        background-color: #242424;
+    }
+
+    body{
+        background-color: #242424;
+    }
+
+    label{
+        color:aliceblue;
+    }
+    
+    .table td,
+    .table th {
+        vertical-align: middle;
+        
+    }
+
+    h1 {
+        color: white;
+    }
+
+    hr {
+        background-color: #ddd;
+    }
+
+    .container-generic {
+        min-height: 100vh;
+        background-color: #242424;
+    }
+
+
+.material-symbols-outlined {
+ color: white;
+}
+
+.chatBoxContainer{
+    background-color: aliceblue;
+    text-align: start;
+}
+
+#chatContainer{
+    color: black;
+    border: none;
+    border-radius: 50px 50px 0 0;
+}
+
+ul{
+    background-color: white;
+    color:black;
+    list-style: none;
+}
+
+li{
+    background-color: white;
+    color: black;
+}

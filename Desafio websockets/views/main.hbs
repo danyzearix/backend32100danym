@@ -1,0 +1,52 @@
+<div id="container" class="container-generic text-center">
+
+    <div class="container mt-3 text-center">
+        <div class="">
+            <span class="material-symbols-outlined">
+                inventory
+                </span>
+            <h1>INGRESE PRODUCTO</h1>
+            <br>
+            <h4>Incluya Nombre, Precio, y una URL de la Imagen del producto</h4>
+
+            <form id="productForm">
+                <!-- Campo nombre del producto -->
+                <div class="text-center mb-3">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" class="form-control" type="text" name="title" required>
+                </div>
+
+                <!-- Campo precio del producto -->
+                <div class="text-center mb-3">
+                    <label for="precio">Precio</label>
+                    <input id="precio" class="form-control" type="number" step="0.01" name="price" required>
+                </div>
+
+                <!-- Campo url de la foto del producto -->
+                <div class="text-center mb-3">
+                    <label for="foto">Foto URL</label>
+                    <input id="foto" class="form-control" type="url" name="thumbnail">
+                </div>
+
+                <!-- Botón de envío -->
+                <button id="buttonSend" class="btn btn-primary mt-3 mb-5">Enviar</button>
+            </form>
+                <span class="material-symbols-outlined"> view_in_ar_new </span>
+                <h1>Vista de Productos</h1>
+                <br>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table id="renderTabla" class="table table-dark">
+    </div>
+
+</div>
+
+{{> chat}}
+
+
+
+  
+    
+

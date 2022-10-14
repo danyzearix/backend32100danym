@@ -1,0 +1,1 @@
+[{"name":"PLAY 5 ","price":"500","img":"https://blog.latam.playstation.com/tachyon/sites/3/2022/09/4d2e6098c3d5edb2c8d4d591c3b3aaf80a4cccdc.jpg?resize=1088%2C612&crop_strategy=smart"},{"name":"PLAY 6","price":"700","img":"https://exitocol.vtexassets.com/arquivos/ids/9154827/consola-sony-playstation-5-ps5-825gb-lector-de-disco.jpg?v=637631028231230000"}]
