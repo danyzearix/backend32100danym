@@ -1,1 +1,1 @@
-[{"title":"PLAY 20","price":500,"thumbnail":"https://freepik.com/65465","id":1,"timestamp":1665970282324}]
+[{"id":1,"timestamp":1665977169876,"nombre":"PLAY 5 pro","descripcion":"Nueva consola de sony","codigo":549879832,"foto":"https://exitocol.vtexassets.com/arquivos/ids/9154827/consola-sony-playstation-5-ps5-825gb-lector-de-disco.jpg?v=637631028231230000","precio":500,"stock":8}]

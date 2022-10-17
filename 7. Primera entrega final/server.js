@@ -6,7 +6,7 @@ const route = require ("./controllers/index");
 app.use (express.json());
 app.use(express.urlencoded({extended: true}));
 //app.use(express.static(__dirname + "/public")); //Path Absoluto
-app.use  ("/api", route);
+app.use("/api", route);
 
 //Server listen
 const server = app.listen(port, () => {
