@@ -4,10 +4,13 @@
     "node": "^17.7.2"
   },
   "scripts": {
-    "start": "node ./api.js",
-    "dev": "nodemon api.js"
+    "start": "node ./server.js",
+    "dev": "nodemon server.js",
+    "debug" :"npx eslint ./routes/index.js",
+    "fix":"npx eslint api.js --fix"
   },
   "devDependencies": {
+    "eslint": "^8.25.0",
     "nodemon": "^2.0.16"
   }
 }

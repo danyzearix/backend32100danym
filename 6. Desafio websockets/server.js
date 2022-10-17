@@ -88,12 +88,11 @@ function readCHAT(params) {
 
  });
 
-
 app.get('/', (req, res) => {
     res.render('main', {});
   });
 
-server.listen(3000, () => {
+  server.listen(3000, () => {
 	console.log("Ok");
 });
 
