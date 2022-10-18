@@ -10,6 +10,11 @@ class Products {
         this.stock = stock
     };
 //Metodos de la clase
+//--Get by ID
+getById(id){
+    let producto = productos.find (producto => producto.id === id);
+    console.log(producto);
+}
 };
 
 module.exports = Products;
